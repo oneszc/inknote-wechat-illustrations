@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inknote WeChat"
+  short_description: "Finished notebook doodle visuals for WeChat articles"
+  default_prompt: "Use $inknote-wechat to generate finished notebook-style doodle illustrations for this WeChat article."
