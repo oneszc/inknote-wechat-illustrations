@@ -69,6 +69,8 @@ inknote-wechat/
 
 这个技能不是单纯写 Prompt，而是服务于公众号生产流程：目标是直接拿到一组风格统一、能放进文章里的配图。
 
+它不规定图片保存位置。实际保存目录应由使用它的项目或用户自己决定。
+
 ## English
 
 Notebook-style doodle illustrations for WeChat official account articles.
@@ -119,3 +121,5 @@ For early ideation:
 ## Notes
 
 This skill is designed for article production workflows where the goal is not only to write prompts, but to produce usable WeChat visuals with a consistent editorial illustration style.
+
+It does not prescribe a fixed output directory. The save location should be decided by the host project or the user.

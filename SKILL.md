@@ -52,6 +52,7 @@ Use `assets/style-reference.jpg` as the local style reference when the image gen
 - If the user only needs a full article visual package, start with 1 cover image first unless they explicitly ask for multiple images.
 - If generating multiple images, keep the set visually consistent: same paper texture, same black marker line weight, same accent color logic.
 - If text accuracy inside the image matters, keep visible text very short and repeat the exact Chinese words in the prompt.
+- Do not prescribe a default output folder. Save files only when the user or host project provides an output location; otherwise return the generated images in the response.
 - If the tool cannot generate images, fall back to prompt-only output and clearly say so.
 
 ## WeChat Defaults
