@@ -1,6 +1,26 @@
+<div align="center">
+
 # inknote-wechat
 
-中文 | [English](#english)
+**Notebook-style doodle visuals for WeChat articles**
+
+面向微信公众号文章的手帐涂鸦风配图技能
+
+![Skill](https://img.shields.io/badge/skill-inknote--wechat-111111)
+![Default](https://img.shields.io/badge/default-direct%20image-2ea44f)
+![Cover](https://img.shields.io/badge/cover-2.35%3A1-f45c50)
+![Section](https://img.shields.io/badge/section-16%3A9-1f6feb)
+![Prompt](https://img.shields.io/badge/prompt-output%20supported-6f42c1)
+
+[中文](#中文) | [English](#english) | [Style Guide](references/style-guide.md)
+
+</div>
+
+---
+
+<a id="中文"></a>
+
+## 中文
 
 面向微信公众号文章的手帐涂鸦风配图技能。
 
