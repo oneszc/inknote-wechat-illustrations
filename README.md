@@ -77,6 +77,27 @@
 Use $inknote-wechat to generate a WeChat cover image for this article.
 ```
 
+## Claude Code 使用
+
+Claude Code 主要读取 `SKILL.md`。`agents/openai.yaml` 不是 Claude Code 必需文件。
+
+推荐安装方式：
+
+```text
+~/.claude/skills/inknote-wechat/
+├── SKILL.md
+├── assets/
+└── references/
+```
+
+安装后可以在 Claude Code 中使用：
+
+```text
+/inknote-wechat 给这篇公众号文章生成配图。
+```
+
+如果当前 Claude Code 环境没有图片生成工具，这个技能会退回输出完整 Prompt。
+
 ## 推荐输出
 
 普通公众号文章：
@@ -114,6 +135,8 @@ inknote-wechat/
 这个技能不是单纯写 Prompt，而是服务于公众号生产流程：目标是直接拿到一组风格统一、能放进文章里的配图。
 
 `assets/examples/` 中的示例图是当前风格基准：后续生成应尽量对齐它们的纸张质感、粗黑手写标题、手绘 UI 卡片和少量红色点缀。
+
+`agents/openai.yaml` 是给 OpenAI/Codex 类界面使用的可选元数据，用来提供展示名、简介和默认提示词。Claude Code 使用时主要依赖 `SKILL.md`。
 
 它不规定图片保存位置。实际保存目录应由使用它的项目或用户自己决定。
 
@@ -167,6 +190,27 @@ Use $inknote-wechat to create a full visual package: 1 cover image + 3 in-articl
 
 By default, the skill generates the cover first for style confirmation, then continues with the in-article visuals after approval. Ask for all images in one pass if you want the full set immediately.
 
+## Claude Code Usage
+
+Claude Code uses `SKILL.md` directly. `agents/openai.yaml` is not required for Claude Code.
+
+Recommended install location:
+
+```text
+~/.claude/skills/inknote-wechat/
+├── SKILL.md
+├── assets/
+└── references/
+```
+
+After installation, use:
+
+```text
+/inknote-wechat generate visuals for this WeChat article.
+```
+
+If no image generation tool is available in the current Claude Code environment, the skill falls back to complete image prompts.
+
 ## Recommended Output
 
 For a normal WeChat article:
@@ -185,5 +229,7 @@ For early ideation:
 This skill is designed for article production workflows where the goal is not only to write prompts, but to produce usable WeChat visuals with a consistent editorial illustration style.
 
 The images in `assets/examples/` are the current style baseline for paper texture, rough hand-lettered titles, hand-drawn UI cards, and restrained red accents.
+
+`agents/openai.yaml` is optional metadata for OpenAI/Codex-style interfaces. It provides display text and a default prompt, but Claude Code primarily relies on `SKILL.md`.
 
 It does not prescribe a fixed output directory. The save location should be decided by the host project or the user.
