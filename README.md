@@ -7,6 +7,7 @@
 面向微信公众号文章的手帐涂鸦风配图技能
 
 ![Skill](https://img.shields.io/badge/skill-inknote--wechat-111111)
+![Version](https://img.shields.io/badge/version-v0.1.0-blue)
 ![Default](https://img.shields.io/badge/default-direct%20image-2ea44f)
 ![Cover](https://img.shields.io/badge/cover-2.35%3A1-f45c50)
 ![Section](https://img.shields.io/badge/section-16%3A9-1f6feb)
