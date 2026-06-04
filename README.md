@@ -6,7 +6,7 @@
 
 `inknote-wechat` 可以把中文文章选题、文章草稿或完整公众号文章，转成一组可直接使用的封面图和内文插图。它特别适合 AI 产品、Vibe Coding、设计工具、创作者工具、效率工具和个人知识工作类内容。
 
-![Codex mobile article cover example](assets/examples/codex-mobile-cover.svg)
+![Codex mobile article cover example](assets/examples/codex-mobile-cover.png)
 
 ## 示例：OpenAI Codex 移动端文章
 
@@ -14,9 +14,9 @@
 
 | 封面图 | 内文图 |
 | --- | --- |
-| ![Cover example](assets/examples/codex-mobile-cover.svg) | ![Work anywhere example](assets/examples/codex-mobile-work-anywhere.svg) |
+| ![Cover example](assets/examples/codex-mobile-cover.png) | ![Work anywhere example](assets/examples/codex-mobile-work-anywhere.png) |
 | 随时随地使用 Codex | 随时接住进展 |
-| ![Decision example](assets/examples/codex-mobile-decision.svg) | ![Remote SSH example](assets/examples/codex-mobile-remote-ssh.svg) |
+| ![Decision example](assets/examples/codex-mobile-decision.png) | ![Remote SSH example](assets/examples/codex-mobile-remote-ssh.png) |
 | 关键时刻介入 | 远程环境继续跑 |
 
 ## 一句话用法
@@ -78,10 +78,10 @@ inknote-wechat/
 ├── assets/
 │   ├── style-reference.jpg
 │   └── examples/
-│       ├── codex-mobile-cover.svg
-│       ├── codex-mobile-work-anywhere.svg
-│       ├── codex-mobile-decision.svg
-│       └── codex-mobile-remote-ssh.svg
+│       ├── codex-mobile-cover.png
+│       ├── codex-mobile-work-anywhere.png
+│       ├── codex-mobile-decision.png
+│       └── codex-mobile-remote-ssh.png
 └── references/
     └── style-guide.md
 ```
@@ -98,7 +98,7 @@ Notebook-style doodle illustrations for WeChat official account articles.
 
 `inknote-wechat` turns Chinese article ideas, drafts, or finished WeChat articles into usable cover images and in-article illustrations. It is tuned for AI product, Vibe Coding, design tools, creator workflows, productivity, and personal knowledge-work topics.
 
-![Codex mobile article cover example](assets/examples/codex-mobile-cover.svg)
+![Codex mobile article cover example](assets/examples/codex-mobile-cover.png)
 
 ## Example: OpenAI Codex Mobile Article
 
@@ -106,9 +106,9 @@ This sample visual set is based on an article about Codex becoming available in 
 
 | Cover | In-article visuals |
 | --- | --- |
-| ![Cover example](assets/examples/codex-mobile-cover.svg) | ![Work anywhere example](assets/examples/codex-mobile-work-anywhere.svg) |
+| ![Cover example](assets/examples/codex-mobile-cover.png) | ![Work anywhere example](assets/examples/codex-mobile-work-anywhere.png) |
 | Use Codex Anywhere | Catch progress on mobile |
-| ![Decision example](assets/examples/codex-mobile-decision.svg) | ![Remote SSH example](assets/examples/codex-mobile-remote-ssh.svg) |
+| ![Decision example](assets/examples/codex-mobile-decision.png) | ![Remote SSH example](assets/examples/codex-mobile-remote-ssh.png) |
 | Step in at key moments | Remote environments keep running |
 
 ## What It Does
