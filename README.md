@@ -45,6 +45,8 @@
 用 $inknote-wechat 给这篇文章出一套公众号配图：1 张封面 + 3 张内文图。
 ```
 
+默认会先生成 1 张封面图确认风格；你确认后，再继续生成内文图。如果想一次性生成整套，可以直接说明“全部一次出图”。
+
 ## 适合做什么
 
 - 生成公众号封面图
@@ -78,7 +80,7 @@ Use $inknote-wechat to generate a WeChat cover image for this article.
 
 普通公众号文章：
 
-- 1 张封面图
+- 先出 1 张封面图确认风格
 - 3 张内文插图
 - 每张图附一条简短使用建议
 
@@ -109,6 +111,8 @@ inknote-wechat/
 ## 说明
 
 这个技能不是单纯写 Prompt，而是服务于公众号生产流程：目标是直接拿到一组风格统一、能放进文章里的配图。
+
+`assets/examples/` 中的示例图是当前风格基准：后续生成应尽量对齐它们的纸张质感、粗黑手写标题、手绘 UI 卡片和少量红色点缀。
 
 它不规定图片保存位置。实际保存目录应由使用它的项目或用户自己决定。
 
@@ -160,11 +164,13 @@ Use $inknote-wechat to generate a WeChat cover image for this article.
 Use $inknote-wechat to create a full visual package: 1 cover image + 3 in-article illustrations.
 ```
 
+By default, the skill generates the cover first for style confirmation, then continues with the in-article visuals after approval. Ask for all images in one pass if you want the full set immediately.
+
 ## Recommended Output
 
 For a normal WeChat article:
 
-- 1 cover image
+- 1 cover image first for style confirmation
 - 3 in-article illustrations
 - Short usage note for each image
 
@@ -176,5 +182,7 @@ For early ideation:
 ## Notes
 
 This skill is designed for article production workflows where the goal is not only to write prompts, but to produce usable WeChat visuals with a consistent editorial illustration style.
+
+The images in `assets/examples/` are the current style baseline for paper texture, rough hand-lettered titles, hand-drawn UI cards, and restrained red accents.
 
 It does not prescribe a fixed output directory. The save location should be decided by the host project or the user.

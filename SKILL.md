@@ -13,6 +13,15 @@ The target should feel like a real marker sketch scanned from a notebook, not a 
 
 Load `references/style-guide.md` before writing final prompts or generating images.
 
+## Style Baseline
+
+Use `assets/examples/` as the current visual benchmark. New outputs should match these examples more than a clean diagram:
+
+- `assets/examples/codex-mobile-cover.png` for cover density, paper texture, hand-lettered headline scale, and `2.35:1` crop safety.
+- `assets/examples/codex-mobile-work-anywhere.png`, `assets/examples/codex-mobile-decision.png`, and `assets/examples/codex-mobile-remote-ssh.png` for in-article `16:9` composition, rough UI cards, thick marker linework, and small red accent usage.
+
+Treat `assets/style-reference.jpg` as a general style reference, and `assets/examples/` as the practical production standard for this skill.
+
 ## Workflow
 
 1. Read the article or brief and extract the core reader promise in one sentence.
@@ -24,8 +33,9 @@ Load `references/style-guide.md` before writing final prompts or generating imag
 4. Use concrete metaphors instead of abstract AI imagery. Prefer rough tool panels, notes, windows, arrows, checklists, robots, cursor pointers, folders, small people, and messy annotations.
 5. Make each image readable on mobile. Use 1 focal idea, 3-7 words of visible text at most, and avoid dense paragraph text inside the image.
 6. When the image contains Chinese text, explicitly request `bold hand-lettered Chinese marker characters, not typed font, not calligraphy, not printed typography`.
-7. Generate finished images directly when an image generation tool is available.
-8. Include a negative prompt internally that blocks clean digital fonts, polished vector art, 3D render, glossy gradients, corporate stock illustration, photorealism, and overly cute mascot style.
+7. For a full article visual package, generate the cover first and wait for style confirmation unless the user explicitly asks to generate the whole set in one pass.
+8. Generate finished images directly when an image generation tool is available.
+9. Include a negative prompt internally that blocks clean digital fonts, polished vector art, 3D render, glossy gradients, corporate stock illustration, photorealism, and overly cute mascot style.
 
 ## Prompt Quality Lock
 
@@ -78,7 +88,7 @@ Use `assets/style-reference.jpg` as the local style reference when the image gen
 
 - If the user says `直接出图`, `生成图片`, `成品图`, `配图`, `封面图`, or gives an article and asks for visuals, generate finished images directly.
 - If the user asks for prompts instead of finished images, do not call the image generation tool.
-- If the user only needs a full article visual package, start with 1 cover image first unless they explicitly ask for multiple images.
+- If the user asks for a full article visual package, start with 1 cover image first and ask for style confirmation before generating in-article illustrations, unless they explicitly ask for all images at once.
 - If generating multiple images, keep the set visually consistent: same paper texture, same black marker line weight, same accent color logic.
 - If text accuracy inside the image matters, keep visible text very short and repeat the exact Chinese words in the prompt.
 - If style accuracy matters, prioritize hand-lettering, rough scanned paper texture, and imperfect marker linework over perfect text layout.
