@@ -6,6 +6,8 @@
 
 面向微信公众号文章的手帐涂鸦风配图技能
 
+Works with Claude Code and OpenAI/Codex-style agents.
+
 ![Skill](https://img.shields.io/badge/skill-inknote--wechat-111111)
 ![Version](https://img.shields.io/badge/version-v0.1.0-blue)
 ![Default](https://img.shields.io/badge/default-direct%20image-2ea44f)
@@ -90,6 +92,13 @@ Claude Code 主要读取 `SKILL.md`。`agents/openai.yaml` 不是 Claude Code �
 └── references/
 ```
 
+本地安装命令：
+
+```bash
+mkdir -p ~/.claude/skills/inknote-wechat
+cp -R SKILL.md assets references ~/.claude/skills/inknote-wechat/
+```
+
 安装后可以在 Claude Code 中使用：
 
 ```text
@@ -115,9 +124,11 @@ Claude Code 主要读取 `SKILL.md`。`agents/openai.yaml` 不是 Claude Code �
 
 ```text
 inknote-wechat/
+├── .gitignore
 ├── SKILL.md
 ├── README.md
 ├── agents/
+│   ├── README.md
 │   └── openai.yaml
 ├── assets/
 │   ├── style-reference.jpg
@@ -201,6 +212,13 @@ Recommended install location:
 ├── SKILL.md
 ├── assets/
 └── references/
+```
+
+Install locally:
+
+```bash
+mkdir -p ~/.claude/skills/inknote-wechat
+cp -R SKILL.md assets references ~/.claude/skills/inknote-wechat/
 ```
 
 After installation, use:

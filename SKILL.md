@@ -95,6 +95,16 @@ Use `assets/style-reference.jpg` as the local style reference when the image gen
 - Do not prescribe a default output folder. Save files only when the user or host project provides an output location; otherwise return the generated images in the response.
 - If the tool cannot generate images, fall back to prompt-only output and clearly say so.
 
+## Preflight Checklist
+
+Before generating or returning prompts, quickly verify:
+
+- Cover images use `2.35:1`; in-article images use `16:9`.
+- Full article packages start with 1 cover for style confirmation unless the user asks for all images at once.
+- The prompt aligns with `assets/examples/` for paper texture, rough black marker linework, hand-lettered Chinese titles, hand-drawn UI cards, and restrained red accents.
+- Visible text is short, mobile-readable, and described as hand-lettered marker text rather than typed typography.
+- The negative prompt blocks SVG-like art, clean digital fonts, polished vector illustration, 3D render, corporate stock illustration, and dense infographics.
+
 ## WeChat Defaults
 
 - Cover ratio: `2.35:1`; keep the main subject centered because WeChat crops previews.
