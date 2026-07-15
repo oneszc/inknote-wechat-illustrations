@@ -11,7 +11,7 @@ Works with Claude Code and OpenAI/Codex-style agents.
 ![Skill](https://img.shields.io/badge/skill-inknote--wechat-111111)
 ![Version](https://img.shields.io/badge/version-v0.1.0-blue)
 ![Default](https://img.shields.io/badge/default-direct%20image-2ea44f)
-![Cover](https://img.shields.io/badge/cover-2.35%3A1-f45c50)
+![Cover](https://img.shields.io/badge/cover-master%203.35%3A1-f45c50)
 ![Section](https://img.shields.io/badge/section-16%3A9-1f6feb)
 ![Prompt](https://img.shields.io/badge/prompt-output%20supported-6f42c1)
 
@@ -49,6 +49,8 @@ Works with Claude Code and OpenAI/Codex-style agents.
 ```
 
 默认会先生成 1 张封面图确认风格；你确认后，再继续生成内文图。如果想一次性生成整套，可以直接说明“全部一次出图”。
+
+封面默认是一张组合母图：左侧为 `2.35:1` 消息列表封面，右侧为重新构图的 `1:1` 转发卡片封面。两部分等高拼接，最终只交付一张约 `3.35:1` 的图片，方便在微信封面编辑器中分别框选。
 
 ## 适合做什么
 
@@ -200,6 +202,8 @@ Use $inknote-wechat to create a full visual package: 1 cover image + 3 in-articl
 ```
 
 By default, the skill generates the cover first for style confirmation, then continues with the in-article visuals after approval. Ask for all images in one pass if you want the full set immediately.
+
+The default cover deliverable is one combined master image: an equal-height `2.35:1` landscape cover on the left and a separately composed `1:1` square cover on the right. They are joined into one `3.35:1` image so each region can be selected in WeChat's cover editor.
 
 ## Claude Code Usage
 

@@ -5,7 +5,7 @@
 - Base surface: white notebook paper, pale blue ruled horizontal lines, one red vertical margin line, visible paper grain, subtle scan texture, and natural paper shadow.
 - Linework: thick black marker or felt-tip pen, uneven pressure, rough ink edges, wobbly lines, hand-drawn boxes, arrows, icons, and small characters.
 - Composition: editorial sketch page, not a polished UI mockup. Use generous blank space and one clear focal object.
-- Ratios: use `2.35:1` for WeChat cover images and `16:9` for in-article illustrations by default.
+- Ratios: deliver covers as one `3.35:1` combined master containing an equal-height `2.35:1` landscape panel on the left and a separately composed `1:1` square panel on the right. Use `16:9` for in-article illustrations.
 - Text: hand-lettered or chunky marker lettering. Chinese headlines should look written with a fat black marker: uneven pressure, irregular character size, slightly crooked baseline, and rough ink texture. Keep visible words short and intentional.
 - Color: mostly black and white. Add only one or two small accents such as red flag, yellow highlight, blue sticker, or green check.
 - Details: tiny marginal notes, arrows, mini portraits, cursor pointer, little UI cards, coffee cup, folders, robot, checklist, sticky note, browser window.
@@ -17,6 +17,16 @@
 - Product thinking: hand-drawn funnel, checklist, user face bubbles, before/after boxes.
 - Design process: wireframe cards, sticky notes, tiny annotation arrows, magnifier, swatches.
 - Tool tutorial: step-by-step boxes stacked like notebook UI buttons.
+
+## WeChat Cover Composition
+
+- Build two coordinated but independent layouts: landscape for the message list and square for forwarded cards and the official-account home page.
+- Place the `2.35:1` landscape panel on the left and the `1:1` square panel on the right, aligned to the same height with no gutter or label between them.
+- Treat the square panel as a real second composition, not a center crop. Rebalance the title, focal sketch, and whitespace for its shape.
+- Keep the same visual metaphor, characters, paper texture, marker weight, and accent color across both panels.
+- Shorten long copy in the square panel. Prefer a clear 3-7-character topic phrase over squeezed or tiny lettering.
+- Keep each panel self-contained. Nothing important may span the join.
+- Export the two panels together as one final image with an overall ratio of `3.35:1`.
 
 ## Must Avoid
 
@@ -31,7 +41,8 @@
 
 Use these clauses when needed:
 
-- For covers: `bold hand-lettered Chinese headline with rough black marker strokes, centered focal sketch, enough empty paper around the subject for WeChat crop safety`.
+- For landscape covers: `bold hand-lettered Chinese headline with rough black marker strokes, one clear horizontal composition, mobile-readable at 2.35:1`.
+- For square covers: `short bold hand-lettered Chinese headline, compact focal sketch rebalanced for 1:1, generous edge clearance, mobile-readable`.
 - For section images: `small editorial spot illustration, no large headline, one compact metaphor`.
 - For tool/process images: `stacked hand-drawn UI cards, rough checkbox marks, arrows showing flow`.
 - For contrast images: `split notebook page into left and right imperfect boxes, before and after labels`.
