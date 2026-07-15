@@ -52,6 +52,20 @@ Works with Claude Code and OpenAI/Codex-style agents.
 
 封面默认是一张组合母图：左侧为 `2.35:1` 消息列表封面，右侧为重新构图的 `1:1` 转发卡片封面。两部分等高拼接，最终只交付一张约 `3.35:1` 的图片，方便在微信封面编辑器中分别框选。
 
+## 公众号双封面母图
+
+```text
+┌────────────── 2.35:1 横版封面 ──────────────┬──────── 1:1 方形封面 ────────┐
+│              完整标题与横向构图              │       精简标题与重组构图       │
+└─────────────────────────────────────────────┴──────────────────────────────┘
+```
+
+微信公众号会从同一张上传图片中分别框选消息列表封面和转发卡片封面。为了让两个场景都能获得合适的构图，这个技能不会直接把横版居中裁成方形，而是：
+
+1. 左侧设计一张 `2.35:1` 横版封面，保留完整标题和横向构图。
+2. 右侧重新设计一张 `1:1` 方形封面；标题过长时可以精简，并重新安排主体和留白。
+3. 将两部分等高拼接成一张 `3.35:1` 母图。上传微信后，分别框选左侧横版和右侧方形区域。
+
 ## 适合做什么
 
 - 生成公众号封面图
@@ -204,6 +218,20 @@ Use $inknote-wechat to create a full visual package: 1 cover image + 3 in-articl
 By default, the skill generates the cover first for style confirmation, then continues with the in-article visuals after approval. Ask for all images in one pass if you want the full set immediately.
 
 The default cover deliverable is one combined master image: an equal-height `2.35:1` landscape cover on the left and a separately composed `1:1` square cover on the right. They are joined into one `3.35:1` image so each region can be selected in WeChat's cover editor.
+
+## Combined WeChat Cover Master
+
+```text
+┌────────── 2.35:1 landscape cover ──────────┬────── 1:1 square cover ──────┐
+│      Full headline + horizontal layout      │   Short title + recomposed   │
+└─────────────────────────────────────────────┴─────────────────────────────┘
+```
+
+WeChat selects the message-list cover and the forwarded-card cover from the same uploaded source image. To give each placement a suitable composition, the skill does not simply center-crop the landscape cover into a square:
+
+1. The left `2.35:1` panel uses the full concise headline and a horizontal composition.
+2. The right `1:1` panel is recomposed for the square format. Long copy may be shortened, with the focal sketch and whitespace rebalanced.
+3. Both panels are joined at the same height into one `3.35:1` master image. In WeChat's cover editor, select the landscape region on the left and the square region on the right.
 
 ## Claude Code Usage
 
