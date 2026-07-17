@@ -99,6 +99,17 @@ For prompt-only requests, provide:
 
 Use `assets/style-reference.jpg` as the local style reference when the image generation tool supports reference images.
 
+## Output Storage
+
+- If the user provides an output path, save the final images there.
+- Otherwise, create and use `output/` inside this skill's root directory: the directory that contains this `SKILL.md`.
+- Resolve the default location from the skill root, never from the article path, current working directory, or active host project.
+- Copy only selected final images into `output/`; do not copy discarded drafts or intermediate generation files.
+- Use readable filenames such as `[topic]-cover-master.png` and `[topic]-section-01.png`.
+- Never overwrite an existing image. Add `-v2`, `-v3`, and so on when a filename already exists.
+- Report the final absolute saved paths in the response.
+- If the skill-root `output/` cannot be created or written, report the error and ask the user for another path. Do not silently save into a different project.
+
 ## Direct Image Generation Rules
 
 - If the user says `直接出图`, `生成图片`, `成品图`, `配图`, `封面图`, or gives an article and asks for visuals, generate finished images directly.
@@ -108,7 +119,7 @@ Use `assets/style-reference.jpg` as the local style reference when the image gen
 - If generating multiple images, keep the set visually consistent: same paper texture, same black marker line weight, same accent color logic.
 - If text accuracy inside the image matters, keep visible text very short and repeat the exact Chinese words in the prompt.
 - If style accuracy matters, prioritize hand-lettering, rough scanned paper texture, and imperfect marker linework over perfect text layout.
-- Do not prescribe a default output folder. Save files only when the user or host project provides an output location; otherwise return the generated images in the response.
+- Follow `Output Storage` for every finished image.
 - If the tool cannot generate images, fall back to prompt-only output and clearly say so.
 
 ## Preflight Checklist

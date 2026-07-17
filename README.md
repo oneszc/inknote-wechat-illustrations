@@ -153,8 +153,10 @@ inknote-wechat/
 │       ├── codex-mobile-work-anywhere.png
 │       ├── codex-mobile-decision.png
 │       └── codex-mobile-remote-ssh.png
-└── references/
-    └── style-guide.md
+├── references/
+│   └── style-guide.md
+└── output/
+    └── .gitkeep
 ```
 
 ## 说明
@@ -165,7 +167,7 @@ inknote-wechat/
 
 `agents/openai.yaml` 是给 OpenAI/Codex 类界面使用的可选元数据，用来提供展示名、简介和默认提示词。Claude Code 使用时主要依赖 `SKILL.md`。
 
-它不规定图片保存位置。实际保存目录应由使用它的项目或用户自己决定。
+如果用户没有指定保存位置，最终成品会固定保存到这个技能目录的 `output/`。文章来自桌面、Obsidian 或其他项目都不会改变输出位置。用户指定路径时，以用户路径为准。生成过程中的草稿不会复制进去，同名文件会自动使用 `-v2`、`-v3` 等后缀，避免覆盖已有图片。
 
 ## English
 
@@ -282,4 +284,4 @@ The images in `assets/examples/` are the current style baseline for paper textur
 
 `agents/openai.yaml` is optional metadata for OpenAI/Codex-style interfaces. It provides display text and a default prompt, but Claude Code primarily relies on `SKILL.md`.
 
-It does not prescribe a fixed output directory. The save location should be decided by the host project or the user.
+If the user does not provide a save location, final selected images are always stored in `output/` inside this skill's directory. The article path, current working directory, and host project do not change that location. A user-provided path takes priority. Drafts are not copied there, and existing files are preserved by adding suffixes such as `-v2` or `-v3`.
