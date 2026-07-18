@@ -18,9 +18,9 @@
 - Design process: wireframe cards, sticky notes, tiny annotation arrows, magnifier, swatches.
 - Tool tutorial: step-by-step boxes stacked like notebook UI buttons.
 
-## WeChat Cover Composition
+## Dual-Format Cover Composition
 
-- Build two coordinated but independent layouts: landscape for the message list and square for forwarded cards and the official-account home page.
+- Build two coordinated but independent layouts: landscape for feed and list placements, and square for share-card and profile placements.
 - Place the `2.35:1` landscape panel on the left and the `1:1` square panel on the right, aligned to the same height with no gutter or label between them.
 - Treat the square panel as a real second composition, not a center crop. Rebalance the title, focal sketch, and whitespace for its shape.
 - Keep the same visual metaphor, characters, paper texture, marker weight, and accent color across both panels.

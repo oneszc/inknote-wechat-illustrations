@@ -1,13 +1,13 @@
 ---
-name: inknote-wechat
-description: Use when the user asks for 微信公众号配图, article cover images, section illustrations, social post visuals, or image prompts based on Chinese article content, especially for AI product, Vibe Coding, design, creator tools, productivity, or personal knowledge-work topics.
+name: inknote-article-visuals
+description: Use when the user asks for article visuals, cover images, section illustrations, social post visuals, or image prompts based on Chinese article content, especially for AI product, Vibe Coding, design, creator tools, productivity, or personal knowledge-work topics.
 ---
 
-# WeChat Doodle Illustrations
+# Notebook Doodle Article Visuals
 
 ## Overview
 
-Generate finished WeChat article illustrations by default, not just prompts. Keep the style like a scanned notebook page: textured white ruled paper, pale blue horizontal lines, one red margin line, thick black marker doodles, rough hand-lettered Chinese text, imperfect boxes, tiny marginal notes, simple icons, and one or two small color accents.
+Generate finished article illustrations by default, not just prompts. Keep the style like a scanned notebook page: textured white ruled paper, pale blue horizontal lines, one red margin line, thick black marker doodles, rough hand-lettered Chinese text, imperfect boxes, tiny marginal notes, simple icons, and one or two small color accents.
 
 The target should feel like a real marker sketch scanned from a notebook, not a clean SVG, poster, UI mockup, or digital illustration. All visible text must look hand-drawn: uneven brush pressure, irregular character size, slightly crooked baseline, and no clean digital fonts.
 
@@ -37,12 +37,12 @@ Treat `assets/style-reference.jpg` as a general style reference, and `assets/exa
 8. Generate finished images directly when an image generation tool is available.
 9. Include a negative prompt internally that blocks clean digital fonts, polished vector art, 3D render, glossy gradients, corporate stock illustration, photorealism, and overly cute mascot style.
 
-## WeChat Cover Master
+## Dual-Format Cover Master
 
 Create two independently composed cover variants, then deliver them as one image:
 
-- Left panel: `2.35:1` landscape cover for the message list.
-- Right panel: `1:1` square cover for forwarded cards and the official-account home page.
+- Left panel: `2.35:1` landscape cover for feed and list placements.
+- Right panel: `1:1` square cover for share cards and profile placements.
 - Keep both panels the same height and join them flush side by side. The combined master ratio is `3.35:1`.
 - Do not treat the square panel as a crop of the landscape panel. Recompose the headline and focal sketch for the square format.
 - Keep the visual idea, paper texture, line weight, characters, and accent color consistent across both panels.
@@ -133,7 +133,7 @@ Before generating or returning prompts, quickly verify:
 - Visible text is short, mobile-readable, and described as hand-lettered marker text rather than typed typography.
 - The negative prompt blocks SVG-like art, clean digital fonts, polished vector illustration, 3D render, corporate stock illustration, and dense infographics.
 
-## WeChat Defaults
+## Article Visual Defaults
 
 - Cover master: `3.35:1`, made from an equal-height `2.35:1` landscape panel on the left and a separately composed `1:1` square panel on the right.
 - Cover text: use a concise landscape headline; shorten it further for the square version when needed while preserving the same idea.
@@ -145,5 +145,5 @@ Before generating or returning prompts, quickly verify:
 ## Prompt Skeleton
 
 ```text
-Hand-drawn notebook doodle illustration on textured white ruled paper with pale blue horizontal lines and one red margin line, rough black marker pen linework with uneven pressure, slightly imperfect rectangles and arrows, tiny handwritten annotations, simple tool icons and small doodle characters, [subject/composition], [visible text as bold hand-lettered Chinese marker characters, irregular baseline, not typed font], sparse layout, mobile-readable, editorial illustration for a WeChat article, one small color accent only, scanned paper texture, natural shadows, high contrast black ink.
+Hand-drawn notebook doodle illustration on textured white ruled paper with pale blue horizontal lines and one red margin line, rough black marker pen linework with uneven pressure, slightly imperfect rectangles and arrows, tiny handwritten annotations, simple tool icons and small doodle characters, [subject/composition], [visible text as bold hand-lettered Chinese marker characters, irregular baseline, not typed font], sparse layout, mobile-readable, editorial illustration for an online article, one small color accent only, scanned paper texture, natural shadows, high contrast black ink.
 ```
