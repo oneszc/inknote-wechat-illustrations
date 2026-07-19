@@ -37,6 +37,17 @@
 - Too many colors. The style should read as black pen on lined paper first.
 - Childish school worksheet style. Keep it handmade but sharp, like a designer's rough concept board.
 
+## Failure Conditions
+
+Treat these as hard failures, not minor style drift:
+
+- A cover exported as `16:9`, `2.35:1`, or any single-panel landscape image instead of the required `3.35:1` combined master.
+- A cover whose square version is only a crop or missing entirely.
+- A final image saved beside the source article when the user did not explicitly ask for that output path.
+- Clean cartoon line art without the scanned notebook surface, blue ruled lines, red margin line, and rough marker texture.
+- Chinese headline text that looks like a typed or printed font.
+- A composition that looks like generic AI/editorial cover art rather than the notebook doodle examples.
+
 ## Prompt Add-ons
 
 Use these clauses when needed:

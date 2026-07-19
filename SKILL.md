@@ -133,6 +133,30 @@ Before generating or returning prompts, quickly verify:
 - Visible text is short, mobile-readable, and described as hand-lettered marker text rather than typed typography.
 - The negative prompt blocks SVG-like art, clean digital fonts, polished vector illustration, 3D render, corporate stock illustration, and dense infographics.
 
+## Adversarial Verification Gate
+
+Run this gate after every finished image and before reporting success. If any required item fails, do not deliver the image as final; regenerate, assemble, or clearly report the failure.
+
+Hard measurable checks:
+
+- For a cover, inspect the saved image dimensions. The final file must be approximately `3.35:1` overall, with left `2.35:1` and right `1:1` regions implied by equal panel height. A plain `16:9`, `2.35:1`, or single-panel cover is a failed output.
+- For an in-article illustration, inspect the saved image dimensions. The final file must be approximately `16:9`.
+- For a cover, the response must report `3.35:1 combined master (left 2.35:1 + right 1:1)`, never `16:9 横版文章封面`.
+- The final saved path must follow `Output Storage`. If the user did not provide an output path, saving beside the source article is a failed output.
+
+Visual style checks:
+
+- The image must read as a scanned notebook page: visible ruled paper, red margin line, rough black marker linework, imperfect boxes or arrows, and restrained accent color.
+- Chinese headline text must look hand-lettered with marker pressure, not like a clean digital Chinese font.
+- Reject outputs that feel like clean cartoon scenes, polished editorial posters, UI mockups, stock-like desk images, or generic AI tech covers, even if the subject is correct.
+- Reject covers that only use the old example image as a layout reference. `assets/examples/codex-mobile-cover.png` is a style benchmark, not permission to return one `16:9` cover.
+
+Suggested local dimension check on macOS:
+
+```bash
+sips -g pixelWidth -g pixelHeight /absolute/path/to/final-image.png
+```
+
 ## Article Visual Defaults
 
 - Cover master: `3.35:1`, made from an equal-height `2.35:1` landscape panel on the left and a separately composed `1:1` square panel on the right.
